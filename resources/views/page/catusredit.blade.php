@@ -1,6 +1,6 @@
 @extends('layouts.customLayout')
 @section('link')
-  <a href="#">Back</a>
+  <a href={{route('ctusr.index')}}>Back</a>
 @endsection
 @section('content')
   <form class="insert-data" action="{{route('ctusr.update',$cat -> id)}}" method="post">

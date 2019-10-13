@@ -1,4 +1,7 @@
 @extends('layouts.customLayout')
+@section('link')
+  <a href={{route('ctusr.index')}}>Back</a>
+@endsection
 @section('content')
   <form class="insert-data" action="{{route('ctusr.store')}}" method="post">
     @csrf

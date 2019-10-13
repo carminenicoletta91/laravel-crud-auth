@@ -10653,9 +10653,8 @@ header {
 }
 
 header div.logo img {
-  height: 150px;
+  height: 100px;
   border: 5px solid white;
-  width: 200px;
 }
 
 header div.nav-bar a {
@@ -10738,6 +10737,7 @@ div.container-box div.box a {
 
 div.container-box div.box a:hover {
   text-decoration: underline;
+  color: white;
 }
 
 div.container-box form.insert-data {
@@ -10763,7 +10763,7 @@ div.container-box form.insert-data button#btn-update {
 
 div.container-box form.insert-data button#btn-create:hover,
 div.container-box form.insert-data button#btn-update:hover {
-  color: gray;
+  color: white;
 }
 
 div.container-box form.insert-data p#string-request {
