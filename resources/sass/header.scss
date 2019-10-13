@@ -1,0 +1,27 @@
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height:150px;
+  background:brown;
+  div.logo{
+    img{
+      height:150px;
+      border:5px solid white;
+      width:200px;
+    }
+  }
+  div.nav-bar{
+    a{
+      padding:0 10px;
+      text-decoration: none;
+      color:black;
+      font-size:17px;
+      font-weight:900;
+      &:hover{
+        color:white;
+        text-decoration: none;
+      }
+    }
+  }
+}
