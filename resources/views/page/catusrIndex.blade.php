@@ -1,6 +1,9 @@
 @extends('layouts.customLayout')
 @section('link')
-  <a href="{{route('ctusr.create')}}">Create New Cat</a>
+  <div class="create-new">
+    <span>Add New</span><a id="addnew" href="{{route('ctusr.create')}}"><i class="fas fa-plus"></i></a>
+
+  </div>
 
 @endsection
 @section('content')
@@ -12,8 +15,8 @@
       <p>Name: {{$cat -> name}}</p>
       <p>Race: {{$cat -> race}}</p>
       <p>Cat_Number: {{$cat -> cat_rfid}}</p>
-      <a href={{route('ctusr.edit',$cat -> id)}}>Edit This</a>
-      <a href={{route('ctusr.destroy',$cat -> id)}}>Delete This</a>
+      <a href={{route('ctusr.edit',$cat -> id)}}><i class="far fa-edit"></i></a>
+      <a href={{route('ctusr.destroy',$cat -> id)}}><i class="fas fa-trash"></i></a>
     </div>
 
   @endforeach

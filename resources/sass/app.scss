@@ -1,6 +1,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 // Variables
 @import 'variables';
 
@@ -32,6 +35,39 @@ div.link{
     &:hover{
       color:white;
       text-decoration: underline;
+    }
+  }
+  a#back{
+    padding:0;
+    font-size:40px;
+    border:none;
+    color:brown;
+    background:none;
+    &:hover{
+      color:black;
+    }
+  }
+
+  div.create-new{
+    padding:20px 25px;
+    background:brown;
+    width:max-content;
+    margin:0 auto;
+    span{
+      font-size:25px;
+      color:white;
+    }
+    a{
+      padding:0;
+      font-size:25px;
+      border:none;
+      color:black;
+      background:none;
+      margin-left:10px;
+      &:hover{
+        color:$grayopaque;
+
+      }
     }
   }
 }
@@ -66,14 +102,16 @@ div.container-box{
     align-items: flex-end;
     width:300px;
     line-height:2;
-    background-color:$grayopaque;
+    // background-color:$grayopaque;
     padding:75px 20px;
-    border:1px solid brown;
+    border:2px solid brown;
     border-radius:5px;
+    box-shadow: 7px 12px gray;
     button#btn-create,button#btn-update{
       margin-top:20px;
       padding:5px 10px;
       color:$grayopaque;
+      font-size:17px; 
       border:none;
       background:brown;
       &:hover{
@@ -81,16 +119,24 @@ div.container-box{
       }
     }
     p#string-request{
-      color:red;
+      color:black;
       align-self: center;
+      font-weight: bolder;
+      font-size:medium;
     }
     label{
       color:brown;
       font-weight: 700;
     }
     input{
-      padding:0 2px;
+      padding:0 6px;
       width:170px;
+
+      border-radius:15px;
+      &:hover{
+        border-color:brown;
+      }
     }
   }
+
 }
